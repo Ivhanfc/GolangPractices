@@ -15,6 +15,7 @@ func Worker(idWorker int, colaImagenes <- chan string, wg *sync.WaitGroup) {
 	}
 }
 
+
 func main() {
 	colaImagenes := make(chan string, 5) // tama;o del buffer de 5
 	var wg sync.WaitGroup
